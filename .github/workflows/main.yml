@@ -16,3 +16,10 @@ jobs:
     - name: Display the path
       run: echo ${PATH}
       shell: bash
+  failed_check:
+    name: This Check fails
+    runs-on: ubuntu-latest
+    steps:
+    - name: Display the path
+      run: etch ${PATH}
+      shell: bash

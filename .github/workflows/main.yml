@@ -13,13 +13,11 @@ jobs:
     name: Display the path
     runs-on: ubuntu-latest
     steps:
-    - name: Display the path
-      run: echo ${PATH}
+    - run: echo ${PATH}
       shell: bash
   failed_check:
     name: This Check fails
     runs-on: ubuntu-latest
     steps:
-    - name: This check fails
-      run: etch ${PATH}
+    - run: etch ${PATH}
       shell: bash

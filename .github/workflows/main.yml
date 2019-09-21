@@ -13,5 +13,6 @@ jobs:
     name: Display the path
     runs-on: ubuntu-latest
     steps:
-    - run: echo ${PATH}
-    - uses: bash
+    - name: Display the path
+      run: echo ${PATH}
+      shell: bash

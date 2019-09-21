@@ -2,10 +2,16 @@ name: workflow - Hello World
 on: push
 jobs:
   build:
-    name: Hello world action
+    name: Build Action
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
     - uses: ./action-a
       env:
         MY_NAME: "Benjamin Franklin Parker"
+  Display Path:
+    name: Display the path
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo ${PATH}
+    - shell: bash

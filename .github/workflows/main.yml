@@ -20,6 +20,6 @@ jobs:
     name: This Check fails
     runs-on: ubuntu-latest
     steps:
-    - name: Display the path
+    - name: This check fails
       run: etch ${PATH}
       shell: bash

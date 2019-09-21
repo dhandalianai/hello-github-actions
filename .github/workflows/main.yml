@@ -9,7 +9,7 @@ jobs:
     - uses: ./action-a
       env:
         MY_NAME: "Benjamin Franklin Parker"
-  Display Path:
+  display_path:
     name: Display the path
     runs-on: ubuntu-latest
     steps:

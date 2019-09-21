@@ -10,7 +10,9 @@ LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Octocat <octocat@github.com>"
 
 ADD entrypoint.sh /entrypoint.sh
+ADD entrypoint2.sh /entrypoint2.sh
 RUN chmod +x /entrypoint.sh
+RUN chmod +x /entrypoint2.sh
 ENTRYPOINT ["/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint2.sh"]
 

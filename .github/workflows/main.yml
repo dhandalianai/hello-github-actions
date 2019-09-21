@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo ${PATH}
-    - shell: bash
+    - uses: bash

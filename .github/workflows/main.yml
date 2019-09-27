@@ -15,6 +15,12 @@ jobs:
     steps:
     - run: echo ${PATH}
       shell: bash
+  show_pwd:
+    name: Show PWD
+    runs-on: ubuntu-latest
+    steps:
+    - run: pwd
+      shell: bash
   failed_check:
     name: This Check fails
     runs-on: ubuntu-latest

@@ -1,11 +1,23 @@
-name: A workflow for my Hello World file
+name: CI Test
 on: push
 jobs:
   build:
-    name: Hello world action
+    name: Build Action
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
     - uses: ./action-a
       env:
         MY_NAME: "Benjamin Franklin Parker"
+  display_path:
+    name: Display the path
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo ${PATH}
+      shell: bash
+  failed_check:
+    name: This Check fails
+    runs-on: ubuntu-latest
+    steps:
+    - run: etch ${PATH}
+      shell: bash
